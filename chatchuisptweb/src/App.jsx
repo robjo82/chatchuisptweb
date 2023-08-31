@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './style';
 
-import { Navbar, Hero, Footer } from './components';
+import { Navbar, Hero, Who_are_we, CGU, Footer } from './components';
 
 const App = () => (
   <div className='bg-primary w-full overflow-hidden'>
@@ -20,9 +20,19 @@ const App = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        section 1
-        section 2
-        section 3
+        <Who_are_we />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <CGU />
+      </div>
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Footer />
       </div>
     </div>
   </div>
