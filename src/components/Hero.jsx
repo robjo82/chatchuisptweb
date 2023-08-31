@@ -17,8 +17,8 @@ const Hero = () => (
 
         /* Paragraph */
         <div className='flex flex-row justify-between items-center w-full'>
-          <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
-            Chat ChuisPT est une plateforme de conversation avancée qui permet de créer des chatbots et des assistants virtuels intelligents et performants.
+          <p className={`${styles.paragraph} max-w-[450px] mt-5 text-justify`}>
+            Chat ChuisPT est une application mobile humouristique pour Android inspirée de Chat GPT. Il s'agit d'un chatbot qui génère des réponses SANS analyser la question. Les réponses sont générées aléatoirement à partir de VOS contributions !!!
           </p>
         </div>
       </div>
