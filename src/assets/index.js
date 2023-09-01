@@ -4,5 +4,7 @@ import close from './close.svg';
 import menu from './menu.svg';
 import play_store from './play-store.png';
 import screen_app from './screen_chatCPT.jpg';
+import izaak from './izaak.png';
+import robin from './robin.jpg';
 
-export { icon_logo, text_logo, close, menu, play_store, screen_app };
+export { icon_logo, text_logo, close, menu, play_store, screen_app, izaak, robin };
