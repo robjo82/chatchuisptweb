@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatchuisptweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatchuisptweb
+  template:
+    metadata:
+      labels:
+        app: chatchuisptweb
+    spec:
+      containers:
+        - name: chatchuisptweb
+          image: eu.gcr.io/chatchuispt/chatchuisptweb:main
+          resources:
+            requests:
+              memory: "32Mi"
+              cpu: "10m"
+            limits:
+              memory: "256Mi"
+              cpu: "250m"
+          ports:
+            - containerPort: 80
