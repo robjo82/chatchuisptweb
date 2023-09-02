@@ -14,7 +14,7 @@ const AboutUs = () => (
 
       {/* Robin */}
       <div className={`flex flex-col justify-center items-center w-full`}>
-        <img src={robin} alt='robin' className='w-[300px] h-[300px] rounded-full' />
+        <img src={robin} alt='robin' className='w-[300px] h-[300px] rounded-full object-contain' />
         <h1 className={`flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] py-10 text-center`}>
           Robin <br/><span className='text-gradient'> Backend </span>
         </h1>
