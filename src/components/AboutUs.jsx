@@ -3,14 +3,14 @@ import styles from '../style';
 
 import { izaak, robin } from '../assets'
 
-const About_us = () => (
+const AboutUs = () => (
 
   <section id="who_are_we" className={`flex flex-col justify-center items-center ${styles.paddingY}`}>
-    <div className={`flex flex-row w-full ${styles.paddingY}`}>
-      {/* Title */}
-      <h1 className={`flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] py-10 text-center`}>
-        About us
-      </h1>
+    {/* Title */}
+    <h1 className={`flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] py-10 text-center`}>
+      About us
+    </h1>
+    <div className={`flex md:flex-row flex-col w-full ${styles.paddingY}`}>
 
       {/* Robin */}
       <div className={`flex flex-col justify-center items-center w-full`}>
@@ -29,9 +29,10 @@ const About_us = () => (
       </div>
     </div>
 
-    <div className={`flex flex-row w-full`}>
+    {/*description*/}
 
-      <p className={`flex-1 font-poppins font-normal text-[28px] text-white z-[2] py-10 text-center`}>
+    <div className={`flex flex-row w-full pb-10`}>
+      <p className={`flex-1 font-poppins text-[20px] md:text-[28px] text-white z-[2] text-center`}>
         We are two students from the <span className='text-gradient'> University of Applied Sciences of Amsterdam
         </span> who are passionate about programming and creating new things. We are currently in our third year of the
         <span className='text-gradient'> Software Engineering </span> course. We are always looking for new challenges and
@@ -49,4 +50,4 @@ const About_us = () => (
   </section>
 )
 
-export default Who_are_we
+export default AboutUs

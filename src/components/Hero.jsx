@@ -6,18 +6,18 @@ import { screen_app } from '../assets';
 
 const Hero = () => (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className={`flex-1 justify-center flex flex-col xl:px-0 sm:px-16 px-6`}>
         {/* Title */}
-        <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className={` flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] ss:leading-[100px] leading-[75px]`}>
+        <div className='flex flex-row items-center w-full md:text-justify text-center'>
+          <h1 className={`md:min-w-[650px] flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] ss:leading-[100px] leading-[75px]`}>
             La plateforme de <br className='sm:block hidden'/> {" "}
             <span className='text-gradient'> Conversation Avancée </span>
           </h1>
         </div>
 
         {/* Paragraph */}
-        <div className='flex flex-row justify-between items-center w-full'>
-          <p className={`${styles.paragraph} max-w-[450px] mt-5 text-justify`}>
+        <div className='flex md:justify-start justify-center items-center w-full'>
+          <p className={`${styles.paragraph} max-w-[450px] mt-5 md:text-justify text-center`}>
             Chat ChuisPT est une application mobile humouristique pour Android inspirée de Chat GPT. Il s'agit d'un chatbot qui génère des réponses SANS analyser la question. Les réponses sont générées aléatoirement à partir de VOS contributions !!!
           </p>
         </div>
