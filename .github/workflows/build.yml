@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --passWithNoTests
+        run: npm test -- --watchAll=false --passWithNoTests
 
       - name: SonarCloud analysis
         uses: sonarsource/sonarcloud-github-action@master
@@ -46,7 +46,7 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.GKE_SA_KEY }}
-            
+
       # Setup gcloud CLI
       - name: Set up Cloud SDK
         if: github.ref == 'refs/heads/main' # Only authenticate for main branch
@@ -58,7 +58,7 @@ jobs:
         if: github.ref == 'refs/heads/main' # Only authenticate for main branch
         run: |-
           gcloud --quiet auth configure-docker
-          
+
       # Get the GKE credentials, so we can deploy to the cluster
       - name: Get GKE Credentials
         if: github.ref == 'refs/heads/main' # Only authenticate for main branch
