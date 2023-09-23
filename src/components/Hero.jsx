@@ -5,7 +5,7 @@ import { screen_app } from '../assets';
  
 
 const Hero = () => (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <section id="what-is-chat-chuispt" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 justify-center flex flex-col xl:px-0 sm:px-16 px-6`}>
         {/* Title */}
         <div className='flex flex-row items-center w-full md:text-justify text-center'>

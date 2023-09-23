@@ -5,7 +5,7 @@ import { izaak, robin } from '../assets'
 
 const AboutUs = () => (
 
-  <section id="who_are_we" className={`flex flex-col justify-center items-center ${styles.paddingY}`}>
+  <section id="AboutUs" className={`flex flex-col justify-center items-center ${styles.paddingY}`}>
     {/* Title */}
     <h1 className={`flex-1 font-poppins font-semibold ss:text-[58px] text-[52px] text-white z-[2] py-10 text-center`}>
       About us

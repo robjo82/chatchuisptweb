@@ -4,7 +4,7 @@ export const navLinks = [
         id: "what-is-chat-chuispt",
     },
     {
-        title: "AboutUs",
+        title: "About Us",
         id: "AboutUs",
     },
     {
