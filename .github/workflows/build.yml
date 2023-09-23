@@ -72,15 +72,17 @@ jobs:
         if: github.ref == 'refs/heads/main' # Only build and push for main branch
         run: |-
           docker build \
-            --tag "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:$GITHUB_SHA" \
+            --tag "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:main" \
             --build-arg GITHUB_SHA="$GITHUB_SHA" \
             --build-arg GITHUB_REF="$GITHUB_REF" \
             .
+          docker tag "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:main" "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:$GITHUB_SHA"
 
       # Push the Docker image to Google Container Registry
       - name: Publish
         if: github.ref == 'refs/heads/main' # Only build and push for main branch
         run: |-
+          docker push "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:main"
           docker push "eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:$GITHUB_SHA"
 
       # Deploy the Docker image to the GKE cluster
