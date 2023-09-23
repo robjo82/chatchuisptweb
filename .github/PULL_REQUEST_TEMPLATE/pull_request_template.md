@@ -2,7 +2,7 @@
 
 * [ ] New Feature
 * [ ] Bug Fix
-* [ ] Chore (refactor, documentation, tests... all the changes with no impact on functionalities.) 
+* [ ] Chore (refactor, documentation, tests... all the changes with no impact on functionalities.)
 
 ## Changes description
 
@@ -11,7 +11,7 @@ project's feature/behavior**
 
 ## Technical description
 
-**Add a quick description about what your PullRequest change in 
+**Add a quick description about what your PullRequest change in
 project's code. (example: add a processor check in...)**
 
 ## PR CheckList
