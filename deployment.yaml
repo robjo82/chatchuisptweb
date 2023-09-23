@@ -17,7 +17,7 @@ spec:
           image: eu.gcr.io/chatchuispt/chatchuisptweb:main
           resources:
             requests:
-              memory: "32Mi"
+              memory: "64Mi"
               cpu: "10m"
             limits:
               memory: "256Mi"
