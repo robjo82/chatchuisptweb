@@ -15,6 +15,7 @@ spec:
       containers:
         - name: chatchuisptweb
           image: eu.gcr.io/chatchuispt/chatchuisptweb:main
+          imagePullPolicy: Always
           resources:
             requests:
               memory: "64Mi"
