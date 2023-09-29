@@ -39,3 +39,8 @@ jobs:
           args: >
             -Dsonar.projectKey=robjo82_chatchuisptweb
             -Dsonar.organization=robjo82
+
+      - name: Semantic Release
+        run: npm run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
